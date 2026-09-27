@@ -1,6 +1,6 @@
-🔗 **Сайт на GitHub Pages:** [(https://ulanasiselova2-source.github.io/typography-web/)]
+🔗 **Сайт на GitHub Pages:** https://ulanasiselova2-source.github.io/typography-web/
 
-🔗 **Репозиторий:** [(https://ulanasiselova2-source.github.io/typography-web/index.html)]
+🔗 **Репозиторий:** https://github.com/ulanasiselova2-source/typography-web
 
 ## О проекте
 
