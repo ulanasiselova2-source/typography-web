@@ -7,3 +7,6 @@
 **Тема проекта:** Типографика в Web
 
 **Используемый CSS-фреймворк:** Bulma
+
+* https://ulanasiselova2-source.github.io/typography-web/
+* 
