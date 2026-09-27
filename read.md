@@ -9,4 +9,4 @@
 **Используемый CSS-фреймворк:** Bulma
 
 * https://ulanasiselova2-source.github.io/typography-web/
-* 
+* https://github.com/ulanasiselova2-source/typography-web
