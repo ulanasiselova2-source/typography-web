@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Типографическая иерархия в Web: заголовки, подзаголовки, основной текст и визуальные уровни."
+    >
+
+    <title>Типографика в Web — Иерархия</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <nav
+        class="navbar"
+        aria-label="Основная навигация"
+    >
+
+        <div class="container">
+
+            <div class="navbar-brand">
+
+                <a
+                    class="navbar-item site-logo"
+                    href="index.html"
+                >
+                    WEB<span>TYPE</span>
+                </a>
+
+                <button
+                    class="navbar-burger"
+                    type="button"
+                    aria-label="Открыть меню"
+                    aria-expanded="false"
+                    aria-controls="main-navigation"
+                    data-target="main-navigation"
+                >
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </button>
+
+            </div>
+
+            <div
+                id="main-navigation"
+                class="navbar-menu"
+            >
+
+                <div class="navbar-start">
+
+                    <a
+                        class="navbar-item"
+                        href="index.html"
+                    >
+                        Главная
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="basics.html"
+                    >
+                        Основы
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="fonts.html"
+                    >
+                        Шрифты
+                    </a>
+
+                    <a
+                        class="navbar-item is-active"
+                        href="hierarchy.html"
+                    >
+                        Иерархия
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="responsive.html"
+                    >
+                        Адаптивность
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="color.html"
+                    >
+                        Цвет
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="practice.html"
+                    >
+                        Практика
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="media.html"
+                    >
+                        Видео
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="about.html"
+                    >
+                        О проекте
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="page-hero">
+
+        <div class="container">
+
+            <p class="eyebrow">
+                Раздел 03
+            </p>
+
+            <h1 class="title is-1">
+                Типографическая иерархия
+            </h1>
+
+            <p class="page-intro">
+                Иерархия помогает пользователю быстро определить
+                главное, второстепенное и дополнительное содержание
+                веб-страницы.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="columns">
+
+                <div class="column is-8">
+
+                    <article class="content">
+
+                        <h2 id="what-is-hierarchy">
+                            Что такое иерархия?
+                        </h2>
+
+                        <p>
+                            Типографическая иерархия — это визуальная
+                            система организации текста. Она показывает
+                            пользователю, какие элементы являются
+                            наиболее важными, а какие дополняют
+                            основную информацию.
+                        </p>
+
+                        <p>
+                            Для создания иерархии используются размер,
+                            начертание, цвет, положение элементов,
+                            расстояние между блоками и другие свойства.
+                        </p>
+
+                        <h2 id="levels">
+                            Уровни текста
+                        </h2>
+
+                        <div class="hierarchy-demo">
+
+                            <div class="hierarchy-level hierarchy-h1">
+                                <span>H1</span>
+                                <strong>Главный заголовок</strong>
+                            </div>
+
+                            <div class="hierarchy-level hierarchy-h2">
+                                <span>H2</span>
+                                <strong>Заголовок раздела</strong>
+                            </div>
+
+                            <div class="hierarchy-level hierarchy-h3">
+                                <span>H3</span>
+                                <strong>Подзаголовок</strong>
+                            </div>
+
+                            <div class="hierarchy-level hierarchy-text">
+                                <span>TEXT</span>
+                                <p>
+                                    Основной текст содержит подробную
+                                    информацию и занимает большую часть
+                                    страницы.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <h2 id="headings">
+                            Заголовки
+                        </h2>
+
+                        <p>
+                            В HTML предусмотрено шесть уровней заголовков:
+                            от <code>h1</code> до <code>h6</code>.
+                            Они позволяют структурировать документ
+                            и обозначать вложенность разделов.
+                        </p>
+
+                        <pre><code>&lt;h1&gt;Главный заголовок&lt;/h1&gt;
+&lt;h2&gt;Раздел&lt;/h2&gt;
+&lt;h3&gt;Подраздел&lt;/h3&gt;</code></pre>
+
+                        <p>
+                            На странице должен присутствовать понятный
+                            главный заголовок, после которого содержание
+                            организуется с помощью заголовков следующих
+                            уровней.
+                        </p>
+
+                        <h2 id="size-weight">
+                            Размер и вес
+                        </h2>
+
+                        <p>
+                            Один из наиболее простых способов создать
+                            визуальную иерархию — изменить размер
+                            и начертание текста.
+                        </p>
+
+                        <div class="hierarchy-text-example">
+
+                            <h3 class="hierarchy-title-large">
+                                Главный заголовок
+                            </h3>
+
+                            <h4 class="hierarchy-title-medium">
+                                Заголовок раздела
+                            </h4>
+
+                            <p class="hierarchy-title-small">
+                                Подзаголовок
+                            </p>
+
+                            <p>
+                                Основной текст имеет меньший размер
+                                и обычное начертание, поэтому внимание
+                                пользователя в первую очередь направляется
+                                на заголовки.
+                            </p>
+
+                        </div>
+
+                        <h2 id="visual-signs">
+                            Визуальные признаки иерархии
+                        </h2>
+
+                        <ul>
+                            <li>
+                                Большой размер — более высокий уровень.
+                            </li>
+
+                            <li>
+                                Жирное начертание — дополнительный акцент.
+                            </li>
+
+                            <li>
+                                Контрастный цвет — выделение важного элемента.
+                            </li>
+
+                            <li>
+                                Свободное пространство — отделение блоков.
+                            </li>
+
+                            <li>
+                                Положение на странице — определение структуры.
+                            </li>
+                        </ul>
+
+                        <h2 id="structure">
+                            Пример структуры страницы
+                        </h2>
+
+                        <div class="structure-example">
+
+                            <div>
+                                <strong>H1</strong>
+                                <span>Название страницы</span>
+                            </div>
+
+                            <div>
+                                <strong>H2</strong>
+                                <span>Основной раздел</span>
+                            </div>
+
+                            <div>
+                                <strong>H3</strong>
+                                <span>Подраздел</span>
+                            </div>
+
+                            <div>
+                                <strong>TEXT</strong>
+                                <span>Содержание подраздела</span>
+                            </div>
+
+                            <div>
+                                <strong>H2</strong>
+                                <span>Следующий раздел</span>
+                            </div>
+
+                        </div>
+
+                        <h2>
+                            Главное правило
+                        </h2>
+
+                        <p>
+                            Пользователь должен понимать структуру
+                            страницы ещё до того, как начнёт внимательно
+                            читать весь текст. Поэтому визуальная
+                            иерархия должна быть последовательной
+                            и предсказуемой.
+                        </p>
+
+                    </article>
+
+                </div>
+
+
+                <aside class="column is-4">
+
+                    <div class="sidebar">
+
+                        <h2 class="sidebar-title">
+                            Разделы
+                        </h2>
+
+                        <ul class="sidebar-list">
+
+                            <li>
+                                <a href="#what-is-hierarchy">
+                                    Что такое иерархия?
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#levels">
+                                    Уровни текста
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#headings">
+                                    Заголовки
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#size-weight">
+                                    Размер и вес
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#visual-signs">
+                                    Визуальные признаки
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#structure">
+                                    Структура страницы
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="sidebar-card">
+
+                        <h2 class="title is-5">
+                            HTML
+                        </h2>
+
+                        <p>
+                            Семантические заголовки
+                            <code>h1–h6</code> помогают
+                            структурировать документ.
+                        </p>
+
+                    </div>
+
+
+                    <div class="sidebar-card">
+
+                        <h2 class="title is-5">
+                            Далее
+                        </h2>
+
+                        <p>
+                            Следующий этап — сделать типографику
+                            удобной для разных размеров экранов.
+                        </p>
+
+                        <a
+                            class="button is-primary is-fullwidth"
+                            href="responsive.html"
+                        >
+                            Адаптивность →
+                        </a>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="columns">
+
+            <div class="column">
+
+                <p class="footer-logo">
+                    WEBTYPE
+                </p>
+
+                <p>
+                    Учебный проект «Типографика в Web».
+                </p>
+
+            </div>
+
+            <div class="column">
+
+                <p>
+                    HTML5 · CSS3 · Bulma · JavaScript
+                </p>
+
+                <p>
+                    <a href="about.html">
+                        О проекте
+                    </a>
+                    ·
+                    <a href="practice.html">
+                        Практика
+                    </a>
+                    ·
+                    <a href="media.html">
+                        Видео
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="footer-copy">
+            © 2026. Учебный проект.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

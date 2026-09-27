@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Практическая часть проекта по веб-типографике: таблица параметров текста и чек-лист проверки."
+    >
+
+    <title>Типографика в Web — Практика</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <nav
+        class="navbar"
+        aria-label="Основная навигация"
+    >
+
+        <div class="container">
+
+            <div class="navbar-brand">
+
+                <a
+                    class="navbar-item site-logo"
+                    href="index.html"
+                >
+                    WEB<span>TYPE</span>
+                </a>
+
+                <button
+                    class="navbar-burger"
+                    type="button"
+                    aria-label="Открыть меню"
+                    aria-expanded="false"
+                    aria-controls="main-navigation"
+                    data-target="main-navigation"
+                >
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </button>
+
+            </div>
+
+            <div
+                id="main-navigation"
+                class="navbar-menu"
+            >
+
+                <div class="navbar-start">
+
+                    <a
+                        class="navbar-item"
+                        href="index.html"
+                    >
+                        Главная
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="basics.html"
+                    >
+                        Основы
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="fonts.html"
+                    >
+                        Шрифты
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="hierarchy.html"
+                    >
+                        Иерархия
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="responsive.html"
+                    >
+                        Адаптивность
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="color.html"
+                    >
+                        Цвет
+                    </a>
+
+                    <a
+                        class="navbar-item is-active"
+                        href="practice.html"
+                    >
+                        Практика
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="media.html"
+                    >
+                        Видео
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="about.html"
+                    >
+                        О проекте
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="page-hero">
+
+        <div class="container">
+
+            <p class="eyebrow">
+                Раздел 06
+            </p>
+
+            <h1 class="title is-1">
+                Практика
+            </h1>
+
+            <p class="page-intro">
+                Проверим основные параметры веб-типографики
+                и систематизируем полученные знания.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="columns">
+
+                <div class="column is-8">
+
+                    <article class="content">
+
+                        <h2>
+                            Основные параметры типографики
+                        </h2>
+
+                        <p>
+                            В таблице собраны основные параметры,
+                            которые необходимо учитывать при оформлении
+                            текста на веб-странице.
+                        </p>
+
+                        <div class="table-container">
+
+                            <table class="table is-fullwidth is-striped">
+
+                                <caption>
+                                    Основные параметры веб-типографики
+                                </caption>
+
+                                <thead>
+
+                                    <tr>
+
+                                        <th scope="col">
+                                            Параметр
+                                        </th>
+
+                                        <th scope="col">
+                                            CSS-свойство
+                                        </th>
+
+                                        <th scope="col">
+                                            Назначение
+                                        </th>
+
+                                        <th scope="col">
+                                            Пример
+                                        </th>
+
+                                    </tr>
+
+                                </thead>
+
+                                <tbody>
+
+                                    <tr>
+
+                                        <th scope="row">
+                                            Размер
+                                        </th>
+
+                                        <td>
+                                            <code>font-size</code>
+                                        </td>
+
+                                        <td>
+                                            Определяет размер символов.
+                                        </td>
+
+                                        <td>
+                                            18px
+                                        </td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <th scope="row">
+                                            Начертание
+                                        </th>
+
+                                        <td>
+                                            <code>font-weight</code>
+                                        </td>
+
+                                        <td>
+                                            Определяет толщину текста.
+                                        </td>
+
+                                        <td>
+                                            700
+                                        </td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <th scope="row">
+                                            Межстрочный интервал
+                                        </th>
+
+                                        <td>
+                                            <code>line-height</code>
+                                        </td>
+
+                                        <td>
+                                            Определяет расстояние
+                                            между строками.
+                                        </td>
+
+                                        <td>
+                                            1.6
+                                        </td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <th scope="row">
+                                            Межбуквенное расстояние
+                                        </th>
+
+                                        <td>
+                                            <code>letter-spacing</code>
+                                        </td>
+
+                                        <td>
+                                            Изменяет расстояние
+                                            между символами.
+                                        </td>
+
+                                        <td>
+                                            0.02em
+                                        </td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <th scope="row">
+                                            Семейство
+                                        </th>
+
+                                        <td>
+                                            <code>font-family</code>
+                                        </td>
+
+                                        <td>
+                                            Определяет используемый
+                                            шрифт.
+                                        </td>
+
+                                        <td>
+                                            Arial, sans-serif
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+
+                        <h2>
+                            Чек-лист проверки
+                        </h2>
+
+                        <p>
+                            Перед публикацией страницы полезно проверить
+                            несколько основных характеристик текста.
+                        </p>
+
+                        <div class="checklist">
+
+                            <label class="checklist-item">
+
+                                <input
+                                    type="checkbox"
+                                    name="readability"
+                                >
+
+                                <span>
+                                    Основной текст удобно читать.
+                                </span>
+
+                            </label>
+
+
+                            <label class="checklist-item">
+
+                                <input
+                                    type="checkbox"
+                                    name="hierarchy"
+                                >
+
+                                <span>
+                                    Заголовки имеют понятную иерархию.
+                                </span>
+
+                            </label>
+
+
+                            <label class="checklist-item">
+
+                                <input
+                                    type="checkbox"
+                                    name="contrast"
+                                >
+
+                                <span>
+                                    Текст имеет достаточный контраст.
+                                </span>
+
+                            </label>
+
+
+                            <label class="checklist-item">
+
+                                <input
+                                    type="checkbox"
+                                    name="responsive"
+                                >
+
+                                <span>
+                                    Страница хорошо отображается
+                                    на мобильных устройствах.
+                                </span>
+
+                            </label>
+
+
+                            <label class="checklist-item">
+
+                                <input
+                                    type="checkbox"
+                                    name="fonts"
+                                >
+
+                                <span>
+                                    Шрифты подходят содержанию страницы.
+                                </span>
+
+                            </label>
+
+
+                            <label class="checklist-item">
+
+                                <input
+                                    type="checkbox"
+                                    name="spacing"
+                                >
+
+                                <span>
+                                    Межстрочные и межбуквенные интервалы
+                                    настроены корректно.
+                                </span>
+
+                            </label>
+
+                        </div>
+
+
+                        <h2>
+                            Небольшое задание
+                        </h2>
+
+                        <p>
+                            Посмотрите на любую веб-страницу и определите,
+                            какие элементы формируют её типографическую
+                            иерархию.
+                        </p>
+
+                        <ol>
+
+                            <li>
+                                Найдите главный заголовок.
+                            </li>
+
+                            <li>
+                                Определите заголовки второго уровня.
+                            </li>
+
+                            <li>
+                                Сравните размер основного текста
+                                и заголовков.
+                            </li>
+
+                            <li>
+                                Обратите внимание на межстрочный интервал.
+                            </li>
+
+                            <li>
+                                Проверьте контраст текста и фона.
+                            </li>
+
+                        </ol>
+
+
+                        <div class="practice-note">
+
+                            <h3>
+                                Итог
+                            </h3>
+
+                            <p>
+                                Веб-типографика объединяет работу
+                                со шрифтами, размерами, интервалами,
+                                иерархией, цветом и адаптивностью.
+                                Все эти параметры необходимо рассматривать
+                                как единую систему.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <aside class="column is-4">
+
+                    <div class="sidebar">
+
+                        <h2 class="sidebar-title">
+                            Разделы
+                        </h2>
+
+                        <ul class="sidebar-list">
+
+                            <li>
+                                <a href="basics.html">
+                                    Основы типографики
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="fonts.html">
+                                    Классификация шрифтов
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="hierarchy.html">
+                                    Типографическая иерархия
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="responsive.html">
+                                    Адаптивная типографика
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="color.html">
+                                    Цвет и контраст
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="sidebar-card">
+
+                        <h2 class="title is-5">
+                            Что проверить?
+                        </h2>
+
+                        <ul>
+
+                            <li>
+                                Читаемость
+                            </li>
+
+                            <li>
+                                Иерархию
+                            </li>
+
+                            <li>
+                                Контраст
+                            </li>
+
+                            <li>
+                                Адаптивность
+                            </li>
+
+                            <li>
+                                Интервалы
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="sidebar-card">
+
+                        <h2 class="title is-5">
+                            Все разделы
+                        </h2>
+
+                        <p>
+                            Теоретические материалы проекта помогут
+                            выполнить практическую проверку.
+                        </p>
+
+                        <a
+                            class="button is-primary is-fullwidth"
+                            href="media.html"
+                        >
+                            Перейти к видео →
+                        </a>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="columns">
+
+            <div class="column">
+
+                <p class="footer-logo">
+                    WEBTYPE
+                </p>
+
+                <p>
+                    Учебный проект «Типографика в Web».
+                </p>
+
+            </div>
+
+            <div class="column">
+
+                <p>
+                    HTML5 · CSS3 · Bulma · JavaScript
+                </p>
+
+                <p>
+                    <a href="about.html">
+                        О проекте
+                    </a>
+                    ·
+                    <a href="practice.html">
+                        Практика
+                    </a>
+                    ·
+                    <a href="media.html">
+                        Видео
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="footer-copy">
+            © 2026. Учебный проект.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

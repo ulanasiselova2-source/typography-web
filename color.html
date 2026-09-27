@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Цвет и контраст в веб-типографике: выбор цвета текста, фона и правила доступности."
+    >
+
+    <title>Типографика в Web — Цвет</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <nav
+        class="navbar"
+        aria-label="Основная навигация"
+    >
+
+        <div class="container">
+
+            <div class="navbar-brand">
+
+                <a
+                    class="navbar-item site-logo"
+                    href="index.html"
+                >
+                    WEB<span>TYPE</span>
+                </a>
+
+                <button
+                    class="navbar-burger"
+                    type="button"
+                    aria-label="Открыть меню"
+                    aria-expanded="false"
+                    aria-controls="main-navigation"
+                    data-target="main-navigation"
+                >
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </button>
+
+            </div>
+
+            <div
+                id="main-navigation"
+                class="navbar-menu"
+            >
+
+                <div class="navbar-start">
+
+                    <a
+                        class="navbar-item"
+                        href="index.html"
+                    >
+                        Главная
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="basics.html"
+                    >
+                        Основы
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="fonts.html"
+                    >
+                        Шрифты
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="hierarchy.html"
+                    >
+                        Иерархия
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="responsive.html"
+                    >
+                        Адаптивность
+                    </a>
+
+                    <a
+                        class="navbar-item is-active"
+                        href="color.html"
+                    >
+                        Цвет
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="practice.html"
+                    >
+                        Практика
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="media.html"
+                    >
+                        Видео
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="about.html"
+                    >
+                        О проекте
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="page-hero">
+
+        <div class="container">
+
+            <p class="eyebrow">
+                Раздел 05
+            </p>
+
+            <h1 class="title is-1">
+                Цвет и контраст
+            </h1>
+
+            <p class="page-intro">
+                Цвет текста и фона должен не только соответствовать
+                визуальному стилю сайта, но и обеспечивать хорошую
+                читаемость.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="columns">
+
+                <div class="column is-8">
+
+                    <article class="content">
+
+                        <h2>
+                            Роль цвета в типографике
+                        </h2>
+
+                        <p>
+                            Цвет помогает выделять важные элементы,
+                            создавать визуальную иерархию и формировать
+                            настроение страницы. Однако главным требованием
+                            для текста остаётся его читаемость.
+                        </p>
+
+                        <p>
+                            Если цвет текста слишком близок к цвету фона,
+                            пользователю становится трудно воспринимать
+                            информацию. Поэтому при разработке интерфейса
+                            необходимо проверять контраст.
+                        </p>
+
+
+                        <h2>
+                            Цвет текста
+                        </h2>
+
+                        <div class="color-examples">
+
+                            <div class="color-example color-example-dark">
+
+                                <span class="color-example-label">
+                                    Основной текст
+                                </span>
+
+                                <p>
+                                    Тёмный текст на светлом фоне
+                                    хорошо подходит для больших
+                                    объёмов информации.
+                                </p>
+
+                            </div>
+
+
+                            <div class="color-example color-example-accent">
+
+                                <span class="color-example-label">
+                                    Акцент
+                                </span>
+
+                                <p>
+                                    Акцентный цвет можно использовать
+                                    для ссылок, кнопок и важных элементов.
+                                </p>
+
+                            </div>
+
+
+                            <div class="color-example color-example-muted">
+
+                                <span class="color-example-label">
+                                    Второстепенный текст
+                                </span>
+
+                                <p>
+                                    Менее контрастный цвет можно использовать
+                                    для дополнительной информации, если
+                                    текст остаётся читаемым.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <h2>
+                            Контраст
+                        </h2>
+
+                        <p>
+                            Контраст — это визуальное различие между
+                            текстом и фоном. Чем выше контраст, тем проще
+                            пользователю различать символы.
+                        </p>
+
+                        <div class="contrast-demo">
+
+                            <div class="contrast-good">
+
+                                <strong>
+                                    Хороший контраст
+                                </strong>
+
+                                <p>
+                                    Текст легко читается
+                                    на фоне.
+                                </p>
+
+                            </div>
+
+
+                            <div class="contrast-low">
+
+                                <strong>
+                                    Низкий контраст
+                                </strong>
+
+                                <p>
+                                    Такой вариант может быть
+                                    неудобен для чтения.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <h2>
+                            Цвет фона
+                        </h2>
+
+                        <p>
+                            Для основного текста часто используют
+                            спокойный светлый фон и тёмный текст.
+                            Это позволяет создать устойчивый контраст
+                            без чрезмерной нагрузки на зрение.
+                        </p>
+
+                        <div class="background-example">
+
+                            <h3>
+                                Пример текстового блока
+                            </h3>
+
+                            <p>
+                                Цвет фона должен поддерживать содержание,
+                                а не мешать восприятию текста.
+                            </p>
+
+                        </div>
+
+
+                        <h2>
+                            Практические рекомендации
+                        </h2>
+
+                        <ul>
+
+                            <li>
+                                Используйте достаточно контрастные
+                                цвета для основного текста.
+                            </li>
+
+                            <li>
+                                Не используйте цвет как единственный
+                                способ передачи информации.
+                            </li>
+
+                            <li>
+                                Проверяйте ссылки и кнопки на фоне.
+                            </li>
+
+                            <li>
+                                Не применяйте слишком много акцентных
+                                цветов одновременно.
+                            </li>
+
+                            <li>
+                                Проверяйте текст на разных устройствах
+                                и при разной яркости экрана.
+                            </li>
+
+                        </ul>
+
+
+                        <h2>
+                            Цвет и доступность
+                        </h2>
+
+                        <p>
+                            Хороший контраст особенно важен для людей
+                            с различными особенностями зрения. Поэтому
+                            доступность должна учитываться уже на этапе
+                            выбора цветовой палитры.
+                        </p>
+
+                        <p>
+                            Кроме цвета, для обозначения состояния
+                            элемента можно использовать текст,
+                            иконки, подчёркивание и другие визуальные
+                            признаки.
+                        </p>
+
+                    </article>
+
+                </div>
+
+
+                <aside class="column is-4">
+
+                    <div class="sidebar">
+
+                        <h2 class="sidebar-title">
+                            Разделы
+                        </h2>
+
+                        <ul class="sidebar-list">
+
+                            <li>
+                                <a href="basics.html">
+                                    Основы типографики
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="fonts.html">
+                                    Классификация шрифтов
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="hierarchy.html">
+                                    Типографическая иерархия
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="responsive.html">
+                                    Адаптивная типографика
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="color.html">
+                                    Цвет и контраст
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="sidebar-card">
+
+                        <h2 class="title is-5">
+                            Запомните
+                        </h2>
+
+                        <p>
+                            Цвет должен помогать воспринимать информацию,
+                            а не затруднять её чтение.
+                        </p>
+
+                    </div>
+
+
+                    <div class="sidebar-card">
+
+                        <h2 class="title is-5">
+                            Проверяйте
+                        </h2>
+
+                        <ul>
+
+                            <li>
+                                Цвет текста
+                            </li>
+
+                            <li>
+                                Цвет фона
+                            </li>
+
+                            <li>
+                                Контраст ссылок
+                            </li>
+
+                            <li>
+                                Контраст кнопок
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="sidebar-card">
+
+                        <h2 class="title is-5">
+                            Далее
+                        </h2>
+
+                        <p>
+                            После изучения теории можно проверить
+                            полученные знания на практике.
+                        </p>
+
+                        <a
+                            class="button is-primary is-fullwidth"
+                            href="practice.html"
+                        >
+                            Практика →
+                        </a>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="columns">
+
+            <div class="column">
+
+                <p class="footer-logo">
+                    WEBTYPE
+                </p>
+
+                <p>
+                    Учебный проект «Типографика в Web».
+                </p>
+
+            </div>
+
+            <div class="column">
+
+                <p>
+                    HTML5 · CSS3 · Bulma · JavaScript
+                </p>
+
+                <p>
+                    <a href="about.html">
+                        О проекте
+                    </a>
+                    ·
+                    <a href="practice.html">
+                        Практика
+                    </a>
+                    ·
+                    <a href="media.html">
+                        Видео
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="footer-copy">
+            © 2026. Учебный проект.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

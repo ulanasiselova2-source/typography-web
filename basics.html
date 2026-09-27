@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Основы веб-типографики: размер шрифта, начертание, межстрочный интервал и расстояние между символами."
+    >
+
+    <title>Типографика в Web — Основы</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <nav
+        class="navbar"
+        aria-label="Основная навигация"
+    >
+
+        <div class="container">
+
+            <div class="navbar-brand">
+
+                <a
+                    class="navbar-item site-logo"
+                    href="index.html"
+                >
+                    WEB<span>TYPE</span>
+                </a>
+
+                <button
+                    class="navbar-burger"
+                    type="button"
+                    aria-label="Открыть меню"
+                    aria-expanded="false"
+                    aria-controls="main-navigation"
+                    data-target="main-navigation"
+                >
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </button>
+
+            </div>
+
+            <div
+                id="main-navigation"
+                class="navbar-menu"
+            >
+
+                <div class="navbar-start">
+
+                    <a
+                        class="navbar-item"
+                        href="index.html"
+                    >
+                        Главная
+                    </a>
+
+                    <a
+                        class="navbar-item is-active"
+                        href="basics.html"
+                    >
+                        Основы
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="fonts.html"
+                    >
+                        Шрифты
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="hierarchy.html"
+                    >
+                        Иерархия
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="responsive.html"
+                    >
+                        Адаптивность
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="color.html"
+                    >
+                        Цвет
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="practice.html"
+                    >
+                        Практика
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="media.html"
+                    >
+                        Видео
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="about.html"
+                    >
+                        О проекте
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="page-hero">
+
+        <div class="container">
+
+            <div class="page-hero-layout">
+
+                <div class="page-hero-content">
+
+                    <p class="eyebrow">
+                        Раздел 01
+                    </p>
+
+                    <h1 class="page-hero-title">
+                        Основы веб-типографики
+                    </h1>
+
+                    <p class="page-intro">
+                        Основные параметры текста определяют его внешний вид,
+                        читаемость и визуальную структуру страницы.
+                    </p>
+
+                </div>
+
+                <figure class="page-hero-image">
+
+                    <img
+                        src="images/basics.jpg"
+                        alt="Основы веб-типографики"
+                        title="Основы веб-типографики"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                </figure>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="columns">
+
+                <aside class="column is-3">
+
+                    <div class="sidebar">
+
+                        <h2 class="sidebar-title">
+                            Разделы
+                        </h2>
+
+                        <ul class="sidebar-list">
+
+                            <li>
+                                <a href="#font">
+                                    Гарнитура
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#size">
+                                    Размер текста
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#weight">
+                                    Начертание
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#line-height">
+                                    Интерлиньяж
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#spacing">
+                                    Расстояние между буквами
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </aside>
+
+
+                <div class="column is-9">
+
+                    <article class="content">
+
+                        <h2>
+                            Что такое типографика?
+                        </h2>
+
+                        <p>
+                            Типографика — это система оформления текста
+                            с помощью шрифтов, размеров, интервалов,
+                            выравнивания и других визуальных параметров.
+                            В веб-разработке типографика помогает
+                            организовать содержание страницы и сделать
+                            его удобным для чтения.
+                        </p>
+
+                        <p>
+                            При создании веб-интерфейса необходимо
+                            учитывать не только внешний вид текста,
+                            но и размер экрана, расстояние до пользователя
+                            и особенности отображения страницы
+                            на разных устройствах.
+                        </p>
+
+
+                        <h2 id="font">
+                            Гарнитура
+                        </h2>
+
+                        <p>
+                            Гарнитура определяет внешний вид букв
+                            и общий характер текстового блока.
+                            При выборе шрифта важно учитывать
+                            его назначение и читаемость.
+                        </p>
+
+
+                        <h2>
+                            Основные параметры текста
+                        </h2>
+
+                        <div class="columns is-multiline">
+
+                            <div class="column is-6">
+
+                                <div class="content-card">
+
+                                    <h3 class="title is-4">
+                                        Размер шрифта
+                                    </h3>
+
+                                    <p>
+                                        Размер определяет физическую
+                                        величину символов на странице.
+                                        В CSS он задаётся свойством
+                                        <code>font-size</code>.
+                                    </p>
+
+                                    <p>
+                                        Например:
+                                    </p>
+
+                                    <pre><code>font-size: 18px;</code></pre>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="column is-6">
+
+                                <div class="content-card">
+
+                                    <h3 class="title is-4">
+                                        Начертание
+                                    </h3>
+
+                                    <p>
+                                        Начертание определяет толщину
+                                        символов. Для него используется
+                                        свойство <code>font-weight</code>.
+                                    </p>
+
+                                    <p>
+                                        Например:
+                                    </p>
+
+                                    <pre><code>font-weight: 700;</code></pre>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="column is-6">
+
+                                <div class="content-card">
+
+                                    <h3
+                                        class="title is-4"
+                                        id="line-height"
+                                    >
+                                        Межстрочный интервал
+                                    </h3>
+
+                                    <p>
+                                        Свойство <code>line-height</code>
+                                        задаёт расстояние между строками
+                                        текста. Правильный интервал делает
+                                        большие блоки текста удобнее
+                                        для чтения.
+                                    </p>
+
+                                    <pre><code>line-height: 1.6;</code></pre>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="column is-6">
+
+                                <div class="content-card">
+
+                                    <h3
+                                        class="title is-4"
+                                        id="spacing"
+                                    >
+                                        Межбуквенное расстояние
+                                    </h3>
+
+                                    <p>
+                                        Свойство <code>letter-spacing</code>
+                                        изменяет расстояние между символами.
+                                        Его используют для настройки
+                                        визуального ритма текста.
+                                    </p>
+
+                                    <pre><code>letter-spacing: 0.02em;</code></pre>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <h2 id="size">
+                            Пример оформления
+                        </h2>
+
+                        <p class="basic-example">
+                            Хорошая типографика помогает пользователю
+                            быстро воспринимать информацию и понимать
+                            структуру страницы.
+                        </p>
+
+
+                        <h2 id="weight">
+                            Практические рекомендации
+                        </h2>
+
+                        <ul>
+
+                            <li>
+                                Используйте комфортный размер основного текста.
+                            </li>
+
+                            <li>
+                                Подбирайте межстрочный интервал
+                                с учётом длины строки.
+                            </li>
+
+                            <li>
+                                Не используйте слишком много разных
+                                начертаний одновременно.
+                            </li>
+
+                            <li>
+                                Следите за достаточным контрастом
+                                текста и фона.
+                            </li>
+
+                            <li>
+                                Проверяйте отображение текста
+                                на мобильных устройствах.
+                            </li>
+
+                        </ul>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="columns">
+
+            <div class="column">
+
+                <p class="footer-logo">
+                    WEBTYPE
+                </p>
+
+                <p>
+                    Учебный проект «Типографика в Web».
+                </p>
+
+            </div>
+
+            <div class="column">
+
+                <p>
+                    HTML5 · CSS3 · Bulma · JavaScript
+                </p>
+
+                <p>
+                    <a href="about.html">
+                        О проекте
+                    </a>
+                    ·
+                    <a href="practice.html">
+                        Практика
+                    </a>
+                    ·
+                    <a href="media.html">
+                        Видео
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="footer-copy">
+            © 2026. Учебный проект.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

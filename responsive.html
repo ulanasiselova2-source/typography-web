@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Адаптивная веб-типографика: размеры текста, медиазапросы и настройка текста для разных устройств."
+    >
+
+    <title>Типографика в Web — Адаптивность</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <nav
+        class="navbar"
+        aria-label="Основная навигация"
+    >
+
+        <div class="container">
+
+            <div class="navbar-brand">
+
+                <a
+                    class="navbar-item site-logo"
+                    href="index.html"
+                >
+                    WEB<span>TYPE</span>
+                </a>
+
+                <button
+                    class="navbar-burger"
+                    type="button"
+                    aria-label="Открыть меню"
+                    aria-expanded="false"
+                    aria-controls="main-navigation"
+                    data-target="main-navigation"
+                >
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </button>
+
+            </div>
+
+            <div
+                id="main-navigation"
+                class="navbar-menu"
+            >
+
+                <div class="navbar-start">
+
+                    <a
+                        class="navbar-item"
+                        href="index.html"
+                    >
+                        Главная
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="basics.html"
+                    >
+                        Основы
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="fonts.html"
+                    >
+                        Шрифты
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="hierarchy.html"
+                    >
+                        Иерархия
+                    </a>
+
+                    <a
+                        class="navbar-item is-active"
+                        href="responsive.html"
+                    >
+                        Адаптивность
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="color.html"
+                    >
+                        Цвет
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="practice.html"
+                    >
+                        Практика
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="media.html"
+                    >
+                        Видео
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="about.html"
+                    >
+                        О проекте
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="page-hero">
+
+        <div class="container">
+
+            <p class="eyebrow">
+                Раздел 04
+            </p>
+
+            <h1 class="title is-1">
+                Адаптивная типографика
+            </h1>
+
+            <p class="page-intro">
+                Текст должен оставаться удобным для чтения
+                независимо от размера экрана устройства.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="columns">
+
+                <div class="column is-8">
+
+                    <article class="content">
+
+                        <h2>
+                            Что такое адаптивная типографика?
+                        </h2>
+
+                        <p>
+                            Адаптивная типографика предполагает
+                            изменение размеров и расположения текста
+                            в зависимости от ширины экрана.
+                            Один и тот же сайт должен удобно
+                            восприниматься на смартфоне, планшете
+                            и компьютере.
+                        </p>
+
+                        <p>
+                            Для этого используются относительные
+                            единицы измерения, медиазапросы CSS
+                            и современные функции, например
+                            <code>clamp()</code>.
+                        </p>
+
+
+                        <h2>
+                            Основные размеры экранов
+                        </h2>
+
+                        <div class="responsive-grid">
+
+                            <article class="responsive-card">
+
+                                <span class="responsive-number">
+                                    01
+                                </span>
+
+                                <h3>
+                                    Мобильные устройства
+                                </h3>
+
+                                <p>
+                                    До 768 px
+                                </p>
+
+                                <p>
+                                    На небольшом экране текст должен
+                                    занимать доступную ширину, а меню
+                                    переходить в компактный формат.
+                                </p>
+
+                            </article>
+
+
+                            <article class="responsive-card">
+
+                                <span class="responsive-number">
+                                    02
+                                </span>
+
+                                <h3>
+                                    Планшеты
+                                </h3>
+
+                                <p>
+                                    От 768 px
+                                </p>
+
+                                <p>
+                                    Появляется больше пространства
+                                    для текста, колонок и дополнительных
+                                    информационных блоков.
+                                </p>
+
+                            </article>
+
+
+                            <article class="responsive-card">
+
+                                <span class="responsive-number">
+                                    03
+                                </span>
+
+                                <h3>
+                                    Большие экраны
+                                </h3>
+
+                                <p>
+                                    От 992 px
+                                </p>
+
+                                <p>
+                                    Можно использовать широкую сетку,
+                                    боковые панели и более крупные
+                                    элементы интерфейса.
+                                </p>
+
+                            </article>
+
+                        </div>
+
+
+                        <h2>
+                            Медиазапросы
+                        </h2>
+
+                        <p>
+                            Медиазапросы позволяют применять разные
+                            CSS-правила в зависимости от характеристик
+                            устройства.
+                        </p>
+
+                        <pre><code>/* Мобильные устройства */
+@media (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Планшеты */
+@media (min-width: 768px) {
+    body {
+        font-size: 17px;
+    }
+}
+
+/* Большие экраны */
+@media (min-width: 992px) {
+    body {
+        font-size: 18px;
+    }
+}</code></pre>
+
+
+                        <h2>
+                            Функция clamp()
+                        </h2>
+
+                        <p>
+                            Функция <code>clamp()</code> позволяет
+                            задать минимальное, предпочтительное
+                            и максимальное значение размера текста.
+                            Благодаря этому заголовок может плавно
+                            изменяться при изменении ширины экрана.
+                        </p>
+
+                        <pre><code>h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+}</code></pre>
+
+
+                        <div class="responsive-demo">
+
+                            <p class="responsive-demo-label">
+                                Пример
+                            </p>
+
+                            <h3>
+                                Размер этого заголовка
+                                может изменяться
+                            </h3>
+
+                            <p>
+                                Такой подход позволяет избежать
+                                слишком маленького или слишком большого
+                                текста на разных устройствах.
+                            </p>
+
+                        </div>
+
+
+                        <h2>
+                            Правила адаптивного текста
+                        </h2>
+
+                        <ul>
+
+                            <li>
+                                Не допускайте слишком длинных строк.
+                            </li>
+
+                            <li>
+                                Используйте комфортный размер
+                                основного текста.
+                            </li>
+
+                            <li>
+                                Проверяйте расстояние между строками.
+                            </li>
+
+                            <li>
+                                Заголовки должны сохранять
+                                визуальную иерархию.
+                            </li>
+
+                            <li>
+                                Проверяйте страницу на разных
+                                размерах экрана.
+                            </li>
+
+                        </ul>
+
+
+                        <h2>
+                            Проверка адаптивности
+                        </h2>
+
+                        <p>
+                            В браузере Chrome можно открыть инструменты
+                            разработчика и включить режим эмуляции
+                            мобильных устройств. Это позволяет проверить,
+                            как изменяется текст при разных размерах
+                            экрана.
+                        </p>
+
+                    </article>
+
+                </div>
+
+
+                <aside class="column is-4">
+
+                    <div class="sidebar">
+
+                        <h2 class="sidebar-title">
+                            Разделы
+                        </h2>
+
+                        <ul class="sidebar-list">
+
+                            <li>
+                                <a href="basics.html">
+                                    Основы типографики
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="fonts.html">
+                                    Классификация шрифтов
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="hierarchy.html">
+                                    Типографическая иерархия
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="responsive.html">
+                                    Адаптивная типографика
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="color.html">
+                                    Цвет и контраст
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="sidebar-card">
+
+                        <h2 class="title is-5">
+                            Три контрольные точки
+                        </h2>
+
+                        <ul>
+
+                            <li>
+                                <strong>&lt; 768 px</strong> —
+                                смартфоны
+                            </li>
+
+                            <li>
+                                <strong>≥ 768 px</strong> —
+                                планшеты
+                            </li>
+
+                            <li>
+                                <strong>≥ 992 px</strong> —
+                                большие экраны
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="sidebar-card">
+
+                        <h2 class="title is-5">
+                            CSS
+                        </h2>
+
+                        <p>
+                            Для адаптивной типографики особенно
+                            полезны медиазапросы, относительные единицы
+                            и функция <code>clamp()</code>.
+                        </p>
+
+                    </div>
+
+
+                    <div class="sidebar-card">
+
+                        <h2 class="title is-5">
+                            Далее
+                        </h2>
+
+                        <p>
+                            Следующий важный элемент типографики —
+                            правильный выбор цвета и контраста.
+                        </p>
+
+                        <a
+                            class="button is-primary is-fullwidth"
+                            href="color.html"
+                        >
+                            Цвет →
+                        </a>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="columns">
+
+            <div class="column">
+
+                <p class="footer-logo">
+                    WEBTYPE
+                </p>
+
+                <p>
+                    Учебный проект «Типографика в Web».
+                </p>
+
+            </div>
+
+            <div class="column">
+
+                <p>
+                    HTML5 · CSS3 · Bulma · JavaScript
+                </p>
+
+                <p>
+                    <a href="about.html">
+                        О проекте
+                    </a>
+                    ·
+                    <a href="practice.html">
+                        Практика
+                    </a>
+                    ·
+                    <a href="media.html">
+                        Видео
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="footer-copy">
+            © 2026. Учебный проект.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
